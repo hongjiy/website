@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Homepage of Henry Yang">
+    <meta name="author" content="Henry Yang">
+
+    <title>Henry Yang</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <!-- Bootstrap core CSS -->
+    <link href={{url_for('static', filename = "vendor/bootstrap/css/bootstrap.min.css")}} rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href={{url_for('static', filename = "vendor/font-awesome/css/font-awesome.min.css")}} rel="stylesheet">
+<!--     <link href={{url_for('static', filename = "vendor/devicons/css/devicons.min.css")}} rel="stylesheet">
+ -->    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href={{url_for('static', filename = "vendor/simple-line-icons/css/simple-line-icons.css")}} rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href={{url_for('static', filename = "css/resume.css")}} rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Henry Yang</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src={{url_for('static', filename = "img/avatar.jpeg")}} alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Knowledge</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Downloads</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Henry
+            <span class="text-primary">Yang</span>
+          </h1>
+          <div class="subheading mb-5">Brooklyn, NY 11201 · 917-969-1940 ·
+            <a href="mailto:name@email.com">henry.yang386@gmail.com</a>
+          </div>
+          <p class="mb-5">I am a Python software developer living in Brooklyn. My last job was with Forbes, to develop a cryptocurrency information website called Forbes CryptoMarkets. My work experiences are currently limited to backend development such as content management systems, web services and batch processes.</p>
+            <p class="mb-5">As I come from a computer engineering background, I’m probably not exactly the typical computer science programmer you’d expect. I know about inheritance, class method and decorators but rarely use them at this moment of my career. I’m probably not the person who can give an 100% academically correct answer to a purely theoretical computer science question, but I was able to get dependable implementations to production fast in my previous position.</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://github.com/hongjiy/demos">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+              <li class="list-inline-item">
+              <a href="https://wa.me/19179691940">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+              <li class="list-inline-item">
+              <a href="https://goo.gl/maps/g2wm6xaeWu62">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+              <li class="list-inline-item">
+              <a href="https://forbescrypto.com">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Work Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Forbes CryptoMarkets</h3>
+              <div class="subheading mb-3">Python Developer</div>
+
+
+<p>•  Created and managed data entry batch processes</p>
+<p>•  Created and managed data serving REST endpoints</p>
+<p>•  Improved response time, dependability and scalability of existing programs</p>
+<p>•  Co-created, managed and improved CMS data models to keep up with new features introduced on the frontend</p>
+<p>•  Integrated monitoring services with existing programs. On call 24-7, applied bug fix on a rolling basis</p>
+<p>•  Both programmatically and manually produced website images to specific requirement</p>
+<p>•  Took initiative to create data processing, popularity sorting, live blockchain data streaming services</p>
+            </div>
+              <div class="resume-date text-md-right">
+              
+<span class="text-primary">June 2018 – March 2019</span><p><span class="text-primary">New York, NY</span></p>
+            </div>
+            </div>
+          
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Shoptaki</h3>
+              <div class="subheading mb-3">Python Developer Intern</div>
+<p>•  Lead development of a proof-of-concept blockchain network (node, user, master orchestrator)</p>
+<p>•  Focused on database utility function development (create data scheme, write static SQL scripts)</p>
+<p>•  Took lead in network protocols design and implementation such as node-sever handshake, transaction verification</p>
+<p>•  Collaborated and built a basic monetary transfer application on top of a proof-of-concept blockchain network</p>
+<p>•  Created a python interface to a C library, configured specific static C library build to allow CPython access</p>
+<p>•  Participated in pitch deck drafting. Attended investors meetings</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">February 2017 – December 2017</span>
+               <p><span class="text-primary">New York, NY</span></p>
+            </div>
+          </div>
+
+
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Icon Labs</h3>
+              <div class="subheading mb-3">Embedded System Software Developer Intern</div>
+
+<p>•  Co-wrote a backend user authentication program in C</p>
+<p>•  Edited and debugged existing network traffic filtering module</p>
+<p>•  Wrote data de/encryption program in C</p>
+<p>•  Created unit testing agents for new implementation/feature (correctness and stress testing)</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2015 – January 2016</span>
+               <p><span class="text-primary">Des Moines, IA</span></p>
+            </div>
+          </div>
+      
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Rochester</h3>
+              <div class="subheading mb-3">Bachelor of Science</div>
+              <div>Electrical and Computer Engineering</div>
+              <p></p>
+              <div class="subheading mb-3">Bachelor of Art</div>
+              <div>Business</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-secondary">Class of 2017</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Knowledge</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicon-python-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-c-plain"></i>
+            </li>            
+           </li>
+            <li class="list-inline-item">
+              <i class="devicon-amazonwebservices-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-git-plain"></i>
+            </li>
+              <li class="list-inline-item">
+              <i class="devicon-confluence-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+            <i class="devicon-slack-plain"></i>
+            </li>
+              <li class="list-inline-item">
+            <i class="devicon-illustrator-plain"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-sticky-note-o"></i>
+              Receive new project requirement</li>
+            <li>
+              <i class="fa-li fa fa-keyboard-o"></i>
+              Research, planning and test driven development</li>
+            <li>
+              <i class="fa-li fa fa-edit"></i>
+              Documentation and refactoring</li>
+            <li>
+              <i class="fa-li fa fa-clock-o"></i>
+              Deployment, monitoring and maintenance</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Videos</h2>
+            <h3 class="subheading mb-3">Color Tracking Drone</h3>
+          <p>A color tracking drone, my senior design project when I was at the University of Rochester. Custom programs were written to pilot the drone based off video feed from an onboard camera. Some other features of the drone include GPS location seeking and automatic altitude locking.</p>
+        <iframe width="840" height="473" style="padding:10px" src="https://www.youtube.com/embed/4pIDMc5pevw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <h3 class="subheading mb-3">Music Visualizer</h3>
+          <p>A music visualizer built as a bobby project in summer 2016. The visualizer reads audio from a 3.5mm aux cable, analyse the wave form and decide LED light pattern accordingly. A detialed instruction on how to build one can be found <a href="http://www.instructables.com/id/Music-Visualizer-With-Arduino/">here</a>.</p>
+        <iframe width="840" height="473" style="padding:10px" src="https://www.youtube.com/embed/3ms7s-gU6f8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Downloads</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-file"></i>
+                <a href="https://s3.amazonaws.com/files.henrytheprogrammer.com/HYang_Resume.pdf">Resume</a></li>
+            <li>
+              <i class="fa-li fa fa-file"></i>
+             <a href="https://s3.amazonaws.com/files.henrytheprogrammer.com/Cover+Letter.pdf">Cover Letter</a></li>
+
+            <li>
+              <i class="fa-li fa fa-file"></i>
+              <a href="https://s3.amazonaws.com/files.henrytheprogrammer.com/Two-stage+Headphone+Amplifier.pdf">Report on building a headphone amplifier</a></li>
+            <li>
+              <i class="fa-li fa fa-file"></i>
+             <a href="https://s3.amazonaws.com/files.henrytheprogrammer.com/Degree-ECE.pdf">Degree-ECE</a></li>
+                        <li>
+              <i class="fa-li fa fa-file"></i>
+              <a href="https://s3.amazonaws.com/files.henrytheprogrammer.com/Degree-Business.pdf">Degree-Business</a></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src= {{url_for('static', filename = "vendor/jquery/jquery.min.js")}}></script>
+    <script src={{url_for('static', filename = "vendor/bootstrap/js/bootstrap.bundle.min.js")}}></script>
+
+    <!-- Plugin JavaScript -->
+    <script src={{url_for('static', filename = "vendor/jquery-easing/jquery.easing.min.js")}}></script>
+
+    <!-- Custom scripts for this template -->
+    <script src={{url_for('static', filename = "js/resume.min.js")}}></script>
+
+  
+
+
+</body></html>
