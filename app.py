@@ -14,7 +14,7 @@ def index():
 # def on_push(data):
 # 	print("Got push with: {0}".format(data))
 
-@app.route('/postreceive', method=['POST'])
+@app.route('/postreceive', methods=['POST'])
 def on_push():
 	print('got note')
 
