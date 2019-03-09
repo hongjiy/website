@@ -14,7 +14,7 @@ def index():
 @app.route('/postreceive', methods=['POST'])
 def on_push():
 	data = request.form
-	print('New commit received: ', data.to_dict['payload']['commits']['id'])
+	print('New commit received: ', data.to_dict()['payload']['commits']['id'])
 	g = git.cmd.Git(os.getcwd())
 	g.pull()
 
