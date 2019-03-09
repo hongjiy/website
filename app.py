@@ -14,7 +14,7 @@ def index():
 @app.route('/postreceive', methods=['POST'])
 def on_push():
 	data = request.form
-	print(data)
+	print('New commit received: ', data['commits']['id'])
 	g = git.cmd.Git(os.getcwd())
 	g.pull()
 
@@ -22,4 +22,5 @@ def on_push():
 	return json.dumps(('', 200))
 
 if __name__ == "__main__":
+	app.config['TEMPLATES_AUTO_RELOAD'] = True
 	app.run(host='0.0.0.0', port=80, threaded=True, debug=False)
