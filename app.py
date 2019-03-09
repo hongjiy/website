@@ -1,15 +1,19 @@
-import sys
-sys.path.append('/usr/local/lib/python2.7/site-packages')
 from flask import Flask, render_template
+from github_webhook import Webhook
 
 app = Flask(__name__)
+webhook = Webhook(app)
 
-@app.route("/")
-def hello():
 
-	return render_template("index.html")
+@app.route('/')
+def index():
+	return render_template('index.html')
+
+
+@webhook.hook()
+def on_push(data):
+	print("Got push with: {0}".format(data))
 
 
 if __name__ == "__main__":
-
-	app.run(host = '0.0.0.0', port = 80, threaded=True)
+	app.run(host='0.0.0.0', port=80, threaded=True, debug=False, TEMPLATES_AUTO_RELOAD=True)
