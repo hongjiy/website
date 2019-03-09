@@ -16,4 +16,4 @@ def on_push(data):
 
 
 if __name__ == "__main__":
-	app.run(host='0.0.0.0', port=80, threaded=True, debug=False, TEMPLATES_AUTO_RELOAD=True)
+	app.run(host='0.0.0.0', port=80, threaded=True, debug=False, templates_auto_reload=True)
