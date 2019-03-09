@@ -13,12 +13,10 @@ def index():
 
 @app.route('/postreceive', methods=['POST'])
 def on_push():
-	data = request
-	print('New commit received: ', type(data.get_json()))
-	print(data.get_json())
+	data = request.get_json()
+	print('New commit received: ', data['head_commit']['id'])
 	g = git.cmd.Git(os.getcwd())
 	g.pull()
-
 
 	return json.dumps(('', 200))
 
