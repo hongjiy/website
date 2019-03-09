@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, Response
 import git
 import os
 
@@ -18,7 +18,7 @@ def on_push():
 	g.pull()
 
 
-	return 200
+	return Response(200)
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=80, threaded=True, debug=False)
